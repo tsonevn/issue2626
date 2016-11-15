@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+  <Page.actionBar>
+      <ActionBar title="Title" icon="" backgroundColor="blue">
+        <StackLayout orientation="horizontal"
+          ios:horizontalAlignment="center"
+          android:horizontalAlignment="left">
+          <Button text="Sample test" loaded="buttonLoaded" />
+        </StackLayout>
+      </ActionBar>
+  </Page.actionBar>
+  <StackLayout backgroundColor="blue">
+    <Label text="Tap the button" class="title"/>
+    <Button text="TAP" tap="{{ onTap }}" loaded="buttonLoaded" />
+    <Label text="{{ message }}" class="message" textWrap="true"/>
+  </StackLayout>
+</Page>
